@@ -1,3 +1,5 @@
+#Projeto EVolvo
+
 Essa aplicação permite que os proprietários de veículos elétricos, encontrem carregadores para veículos elétricos públicos, mais próximos possíveis da sua localização. O usuário pode interagir com a aplicação adicionando carregadores, editando carregadores e deletando carregadores de uma lista por meio das rotas GET, POST, PUT e DELETE no BACKEND.
 
 Um dos componentes da aplicação consiste em um FRONTEND, onde foi desenvolvida uma interface do usuário para que ele possa interagir com a aplicação. Foi desenvolvido com HTML, JavaScript e CCS. 
