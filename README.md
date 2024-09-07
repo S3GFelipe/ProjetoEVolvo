@@ -1,4 +1,6 @@
-# Projeto EVolvo
+# Projeto EVolvo por Felipe Andrade
+
+Pensando em uma experiência do usuário personalizada para proprietários de veículos elétricos da marca Volvo, pensei em desenvolver uma aplicação que permita que os usuários possam interagir com uma aplicação, que mostre onde encontrar carregadores para veículos elétricos, facilitando a busca por esses eletropostos a fim de realizar a recarga do seu veículo.
 
 Essa aplicação permite que os proprietários de veículos elétricos, encontrem carregadores para veículos elétricos públicos, mais próximos possíveis da sua localização. O usuário pode interagir com a aplicação adicionando carregadores, editando carregadores e deletando carregadores de uma lista por meio das rotas GET, POST, PUT e DELETE no BACKEND.
 
