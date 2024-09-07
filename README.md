@@ -2,7 +2,7 @@
 
 Pensando em uma experiência do usuário personalizada para proprietários de veículos elétricos da marca Volvo, pensei em desenvolver uma aplicação que permita que os usuários possam interagir com uma aplicação, que mostre onde encontrar carregadores para veículos elétricos, facilitando a busca por esses eletropostos a fim de realizar a recarga do seu veículo.
 
-Essa aplicação permite que os proprietários de veículos elétricos, encontrem carregadores para veículos elétricos públicos, mais próximos possíveis da sua localização. O usuário pode interagir com a aplicação adicionando carregadores, editando carregadores e deletando carregadores de uma lista por meio das rotas GET, POST, PUT e DELETE no BACKEND.
+Essa aplicação permite que os proprietários de veículos elétricos, encontrem carregadores para veículos elétricos públicos, mais próximos possíveis da sua localização. O usuário pode interagir com a aplicação adicionando carregadores, editando carregadores e deletando carregadores de uma lista. Tais ações são realizadas por meio das rotas GET, POST, PUT e DELETE no BACKEND.
 
 Um dos componentes da aplicação consiste em um FRONTEND, onde foi desenvolvida uma interface do usuário, para que ele possa interagir com a aplicação. Foi desenvolvido com HTML, JavaScript e CCS. 
 O FRONTEND interage com duas API's externas públicas que são: "ViaCEP" em que o usuário vai inserir o CEP dele e vai ter um retorno de todos os dados do endereço com base naquele CEP e ele vai saber quantos carregadores tem no bairro dele, na cidade dele e no estado dele. A segunda API é a "SheetJS", na qual o usuário com um clique no botão vai poder fazer baixar a lista de carregadores em uma planilha Excel.
