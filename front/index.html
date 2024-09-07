@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projeto</title>
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="title">
+            <h2>EVolvo - Carregadores disponíveis</h2>
+        </div>
+        <div class="banner">
+            <img src="https://drive.google.com/uc?id=1lNyY0abWHwYPOE9f_2cFmSFgih48dTOt">
+            
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Seção para consulta por CEP -->
+        <section class="cep">
+            <h1 class="titulo">Consulta por carregadores próximos</h1>
+            <label>Digite seu CEP:</label>
+            <input type="number" id="cep" />
+            <button class="addBtn" style="width: auto;" onclick="consultaEndereco()"><b>Consultar</b></button>
+            <div id="resultado">
+                <p>Seu Resultado Aqui</p>
+            </div>
+        </section>
+
+        <!-- Seção para comparar carregadores por bairro, cidade e estado -->
+        <section class="comparadorcep">
+            <div class="subtitulo-container">
+                <h1 class="subtitulo">Carregadores no seu bairro:</h1>
+                <p id="resultadoComparacaoBairro"></p>
+            </div>
+            <div class="subtitulo-container">
+                <h1 class="subtitulo">Carregadores na sua cidade:</h1>
+                <p id="resultadoComparacaoCidade"></p>
+            </div>
+            <div class="subtitulo-container">
+                <h1 class="subtitulo">Carregadores no seu estado:</h1>
+                <p id="resultadoComparacaoEstado"></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Seção para buscar carregadores por bairro, cidade e estado -->
+    <section class="buscar">
+        <div class="ajuste2">
+            <input type="text" id="bairroInput" placeholder="Bairro">
+            <input type="text" id="cidadeInput" placeholder="Cidade">
+            <input type="text" id="estadoInput" placeholder="Estado">
+            <button onclick="filtrarCarregadores()" class="addBtn2">Buscar</button>
+            <button onclick="limparCampos()" class="addBtn2">Limpar</button>
+        </div>
+    </section>
+
+    <!-- Seção para adicionar novos itens de carregadores -->
+    <section class="newItem">
+        <div class="ajuste">
+            <input type="text" id="newModel" placeholder="Digite o modelo do carregador:">
+            <input type="text" id="newFactory" placeholder="Digite o fabricante do carregador:">
+            <input type="text" id="newQuantity" placeholder="Quantidade:">
+            <input type="text" id="newDistrict" placeholder="Bairro:">
+            <input type="text" id="newCity" placeholder="Cidade:">
+            <input type="text" id="newState" placeholder="Estado:">
+            <span onclick="newItem()" class="addBtn">Adicionar</span>
+        </div>
+    </section>
+
+    <!-- Seção para exibir a lista de carregadores -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>ID</th>
+                <th>Modelo</th>
+                <th>Fabricante</th>
+                <th>Quantidade</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th><img src="https://drive.google.com/uc?id=1fwz2q-RPJF-iP8UI4tpC_8iNg1r1LFYc" width="40px" height="40px"></th>
+                <th><img src="https://drive.google.com/uc?id=1yqEzxyttujn7oLRHOPeE63HcU_Y1uIH1" width="40px" height="40px"></th>                
+            </tr>
+        </table>
+    </section>
+
+    
+
+    <!-- Seção para exportar dados como XLSX -->
+    <section class="excel">
+        <button id="sheetjsexport" class="addBtn"><b>Exportar como XLSX</b></button>
+    </section>
+
+    <!-- Scripts JavaScript -->
+    <script src="scripts.js"></script>
+    <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
+</body>
+
+</html>

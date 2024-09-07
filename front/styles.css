@@ -1,0 +1,397 @@
+/* Estilos globais */
+body, ul, li {
+    font-family: Calibri;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    background-color: #938181;
+}
+
+/* Estilos do header */
+header {
+    background-color: #938181;
+    text-align: center;
+    width: 100%;
+}
+
+.title {
+    color: whitesmoke;
+    background-color: #938181;
+    padding: 2px 0px;
+    position: sticky;
+    top: 0px;
+    font-size: xx-large;
+}
+
+/* Estilos do subtitulo e resultados */
+.titulo, .subtitulo {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.subtitulo,
+#resultadoComparacaoBairro,
+#resultadoComparacaoCidade,
+#resultadoComparacaoEstado {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.comparacao-texto {
+    display: flex;
+    flex-direction: row; /* Alterado para linha para alinhar horizontalmente */
+    align-items: center;
+}
+
+.subtitulo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-weight: bold;
+    margin-right: 10px; /* Adicione a margem desejada */
+    font-size: 20px;
+    display: inline;
+    height: 3.5vh; /* Define a altura da seção para ocupar a altura da janela do navegador */
+}
+
+#resultadoComparacaoBairro,
+#resultadoComparacaoCidade,
+#resultadoComparacaoEstado {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle; /* Adicione isso para alinhar verticalmente */
+    flex: 1;
+    max-width: 30%;
+}
+
+
+
+.banner {
+    height: 300px;
+    overflow: fixed;
+}
+
+.banner img {
+    margin: 0px 0px 0px 0px;
+    width: 35%;
+    border: 3px solid rgb(35, 32, 24);
+    
+}
+
+.newItem {
+    
+    /*padding: 30px 40px; */
+    width: 100%;
+
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+
+        
+}
+
+.buscar {
+
+    /*padding: 30px 40px; */
+    width: 100%;
+
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+
+.excel{
+
+    /*padding: 30px 40px; */
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+
+
+}
+
+.busca {
+    
+    /*padding: 30px 40px; */
+    width: 100%;
+
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    
+
+        
+}
+
+.ajuste{
+
+    width: 60.6%;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.ajuste2{
+
+    width: 60.6%;
+    display:flex;
+    justify-content:center;
+    
+}
+
+
+
+.newItem:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+    
+}
+
+#newModel {
+    margin: 0px 0px 0px 0px;
+    border: 1px solid rgb(35, 32, 24);
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+
+    
+}
+
+#resultado{
+    padding: 10px;
+    margin-top: 10px;
+    max-width: 350px;
+    background-color: lightblue;
+    border: 1px solid grey ;
+    border-radius: 10px;
+    box-shadow: 2px 2px grey;
+    color:black;
+    font-weight: bold; /* Define o texto em negrito */
+        
+}
+
+/* Adicione estas regras de estilo */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Adiciona quebra de linha para envolver os elementos */
+    justify-content:center;
+    padding: 10px; /* Adiciona espaço em todos os lados do conteúdo */
+    margin-top: 20px;
+    
+}
+
+.cep,
+.comparador {
+    text-align: center;
+    flex: 1;
+    max-width: 48%;
+    margin: 0 250px; /* Espaço horizontal entre .cep e .comparador */
+}
+
+
+
+.cep {
+    margin-right: 20px; /* Adicione margem à direita para afastar .cep de .comparador */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    height: 50vh; /* Define a altura da seção para ocupar a altura da janela do navegador */
+    
+    
+}
+
+.comparadorcep {
+    
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    height: 30vh; /* Define a altura da seção para ocupar a altura da janela do navegador */
+    
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 100px;
+    margin-right: 500px;
+    max-width: 300px;
+    background-color: lightblue;
+    border: 1px solid grey ;
+    border-radius: 10px;
+    box-shadow: 2px 2px grey;
+    color:black;
+    font-weight: bold; /* Define o texto em negrito */
+}
+
+
+
+.resultado {
+    font-size: 10px; /* Tamanho da fonte do resultado */
+    font-weight: bold; /* Texto em negrito */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+
+
+
+#newFactory {
+    margin: 0px 0px 0px 0px;
+    border: 1px solid rgb(35, 32, 24);
+    width: 32%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newQuantity {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 14%;
+    padding: 10px;
+    font-size: 16px;
+    justify-content: center;
+}
+
+#newDistrict {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 14%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newCity {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newState {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+label {
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 18px; /* Define o tamanho da fonte */
+    color: black; /* Define a cor do texto, substitua pela cor desejada */
+    /* Outros estilos desejados, como margens, espaçamento, etc. */
+}
+
+
+.addBtn {
+    padding: 9px 10px;
+    width: 10%;
+    background-color: rgb(35, 32, 24);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+    font-weight: bold;
+    
+}
+
+.addBtn2 {
+    padding: 9px 10px;
+    width: 10%;
+    background-color: rgb(35, 32, 24);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+    font-weight: bold;
+    
+}
+
+
+
+.addBtn:hover {
+    background-color: #CDCBB5;
+    color: white;
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.close:hover {
+    color: #f44336;
+    font-weight: bolder;
+}
+
+table,
+th,
+
+td {
+    color: black;
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    transition: 0.2s;
+    text-align: center;
+}
+
+table{
+    background-color: lightblue;
+    width: 50%;
+}
+
+tr:nth-child(odd){
+    background-color: lightblue;
+}
+
+th:nth-child(1){
+    width: 80%;
+}
+
+tr:hover {
+    background: #CDCBB5;
+}
+
+/* Seletor para a célula da primeira coluna (ID) */
+#myTable td:first-child,
+#myTable th:first-child {
+  width: 5%; /* Defina o tamanho desejado, por exemplo, 5% da largura da tabela */
+  max-width: 50px; /* Defina um valor máximo para o tamanho da coluna, se desejar */
+}
